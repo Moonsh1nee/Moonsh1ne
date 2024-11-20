@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Moonsh1ne</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="/" class="header__wrapper-logo logo">
+						<div class="logo__short">M</div>
+						<div class="logo__full">Moonsh1ne</div>
+					</a>
+
+					<nav class="header__wrapper-nav nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#!" class="nav__item-link">About</a>
+							</li>
+							<li class="nav__item">
+								<a href="#!" class="nav__item-link">Skills</a>
+							</li>
+							<li class="nav__item">
+								<a href="#!" class="nav__item-link">Work</a>
+							</li>
+							<li class="nav__item">
+								<a href="#!" class="nav__item-link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="btn btn--contact">
+						Contact me
+					</div>
+
+					<!-- <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button> -->
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="index.html">Главная</a></li>
+			</ul>
+		</div>
+
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__wrapper">
+						<div class="hero__wrapper-content">
+							<div class="hero__text">Hello, I&#8217;m <span>Vlad Akimov</span>.</div>
+							<h1 class="hero__title">I&#8217;m <span>Web Developer</span>.</h1>
+							<a href="#work" class="btn--work btn--contact">
+								My&#160;work
+								<svg class="icon icon--arrow-right">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+						<picture>
+							<source srcset="./img/hero/hero.webp 1x, ./img/hero/hero@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/hero/hero.png 1x, ./img/hero/hero@2x.png 2x" type="image/png" />
+							<img src="./img/hero/hero.png" alt="hero bg img" class="hero__wrapper-img" />
+						</picture>
+					</div>
+				</div>
+
+				<div class="hero__btn-about">
+					<a href="#about" class="btn--about">
+						About
+					</a>
+					<div class="icon--arrow-down"></div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container"></div>
+		</footer>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

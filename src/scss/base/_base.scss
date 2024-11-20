@@ -3,8 +3,8 @@ html {
 }
 
 body {
-	background-color: $page-bg;
-	color: $text-color;
+	background-color: $bg-light-grey;
+	color: $font-color;
 	font-family: $font-main;
 	text-wrap: balance;
 }
@@ -14,5 +14,5 @@ img {
 }
 
 a {
-	color: $link-color;
+	color: $dark-grey;
 }
