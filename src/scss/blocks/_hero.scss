@@ -1,8 +1,8 @@
 .hero {
     background-color: $light-grey;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
     @include flex-center;
-    padding: 20px 0;
+    padding: 100px 0;
 
     position: relative;
     clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);

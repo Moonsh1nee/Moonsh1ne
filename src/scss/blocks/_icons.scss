@@ -1,3 +1,9 @@
+.icon {
+    width: 60px;
+    height: 60px;
+    fill: $white;
+}
+
 .icon--arrow-down {
     position: relative;
     margin-top: 3px;
@@ -8,7 +14,7 @@
     transition: all 0.2s;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -4px;
         left: -4px;
@@ -19,7 +25,7 @@
         border-top: 10px solid $dark-grey;
         opacity: 0;
 
-        transition: opacity  .3s .2s;
+        transition: opacity 0.3s 0.2s;
     }
 }
 
@@ -28,5 +34,16 @@
     height: 20px;
     fill: $white;
 
+    padding-top: 2px;
+
     transition: all 0.2s ease-in-out;
+}
+
+.icon--code,
+.icon--responsive,
+.icon--fast,
+.icon--intuitive {
+    width: 60px;
+    height: 60px;
+    fill: $white;
 }

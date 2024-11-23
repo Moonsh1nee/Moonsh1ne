@@ -1,0 +1,55 @@
+.contact {
+    padding: $section-padding 0;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &-form__question {
+        font-size: 18px;
+        font-family: $font-second;
+        color: $blue-btn-accent;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        &-form {
+            padding: 15px;
+            background-color: $light-grey;
+            border-radius: 12px;
+        }
+
+    }
+    &-social {
+        padding: 15px;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            justify-items: center;
+            gap: 20px;
+        }
+
+        &__item {
+            padding: 10px;
+            background-color: $blue-light;
+            border-radius: 20%;
+
+            svg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -88,7 +88,7 @@
 .btn--work {
     @include flex-center-between;
     
-    max-width: 140px;
+    max-width: 150px;
     animation: none;
 
 }
@@ -96,4 +96,26 @@
 .btn--work:hover .icon--arrow-right {
     transform: translateX(5px);
     fill: $orange;
+}
+
+.btn--works-view {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    max-width: 132px;
+    background-color: $blue-btn-accent;
+    font-family: $font-fourth;
+    color: $white;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: darken($blue-btn-accent, 10%);
+    }
 }
