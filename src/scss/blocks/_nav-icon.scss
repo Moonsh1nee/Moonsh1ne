@@ -2,13 +2,12 @@
 .mobile-nav-btn {
 	--time: 0.1s;
 
-	--width: 40px;
-	--height: 30px;
+	--width: 30px;
+	--height: 20px;
 
-	--line-height: 4px;
-	--spacing: 6px;
+	--line-height: 2px;
+	--spacing: 4px;
 
-	--color: #000;
 	--radius: 4px;
 
 	/* Fixed height and width */
@@ -28,7 +27,7 @@
 	position: relative;
 	width: var(--width);
 	height: var(--line-height);
-	background-color: var(--color);
+	background-color: $dark-grey;
 	border-radius: var(--radius);
 }
 
@@ -44,7 +43,7 @@
 	height: var(--line-height);
 
 	border-radius: var(--radius);
-	background-color: var(--color);
+	background-color: $dark-grey;
 	transition: transform var(--time) ease-in,
 		top var(--time) linear var(--time);
 }

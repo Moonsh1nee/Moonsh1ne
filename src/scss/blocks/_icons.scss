@@ -37,6 +37,18 @@
     padding-top: 2px;
 
     transition: all 0.2s ease-in-out;
+
+    @include media-sm {
+        width: 18px;
+        height: 18px;
+        padding-top: 1px;
+    }
+
+    @media (max-width: 420px) {
+        width: 16px;
+        height: 16px;
+        padding-top: 1px;
+    }
 }
 
 .icon--code,
@@ -46,4 +58,14 @@
     width: 60px;
     height: 60px;
     fill: $white;
+
+    @include media-md {
+        width: 50px;
+        height: 50px;
+    }
+
+    @include media-sm {
+        width: 40px;
+        height: 40px;
+    }
 }

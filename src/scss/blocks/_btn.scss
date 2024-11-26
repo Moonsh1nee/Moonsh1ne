@@ -32,6 +32,21 @@
     &:hover {
         background-color: darken($blue-btn-accent, 10%);
     }
+
+    @include media-lg {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    @include media-sm {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 420px) {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
 }
 
 /* Анимация глянца */
@@ -90,6 +105,18 @@
     
     max-width: 150px;
     animation: none;
+
+    @include media-lg {
+        max-width: 130px;
+    }
+
+    @include media-sm {
+        max-width: 110px;
+    }
+
+    @media (max-width: 420px) {
+        max-width: 90px;
+    }
 
 }
 

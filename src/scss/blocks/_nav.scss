@@ -6,6 +6,11 @@
         font-weight: 400;
         font-size: 16px;
         text-transform: uppercase;
+
+        @include media-lg {
+            gap: 20px;
+            font-size: 15px;
+        }
     }
 
     &__item {
@@ -33,5 +38,9 @@
                 color: $font-color;
             }
         }
+    }
+
+    @include media-md {
+        display: none;
     }
 }

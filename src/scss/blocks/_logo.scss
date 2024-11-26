@@ -13,6 +13,32 @@
         vertical-align: middle;
         line-height: 45px;
         border-radius: 6px;
+
+        @include media-lg {
+            font-size: 24px;
+            width: 30px;
+            height: 30px;
+            line-height: 35px;
+        }
+
+        @include media-sm {
+            font-size: 20px;
+            width: 25px;
+            height: 25px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 420px) {
+            font-size: 16px;
+            width: 20px;
+            height: 20px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 330px) {
+            display: none;
+        }
     }
 
     &__full {
@@ -22,5 +48,28 @@
         line-height: 40px;
         color: $dark-grey;
         text-transform: uppercase;
+
+        @include media-lg {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        @include media-sm {
+            font-size: 24px;
+            line-height: 1px;
+        }
+
+        @media (max-width: 420px) {
+            font-size: 20px;
+            line-height: 0;
+        }
+
+        @media (max-width: 330px) {
+            font-size: 16px;
+        }
+    }
+
+    @include media-sm {
+        gap: 5px;
     }
 }

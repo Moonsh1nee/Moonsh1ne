@@ -1,8 +1,27 @@
 .about {
     padding: $section-padding 0;
 
-    &__title {
+    &__title.title-2 {
         margin-bottom: 80px;
+
+        @include media-lg {
+            font-size: 30px;
+        }
+
+        @include media-md {
+            font-size: 28px;
+            margin-bottom: 70px;
+        }
+
+        @include media-sm {
+            font-size: 26px;
+            margin-bottom: 60px;
+        }
+
+        @include media-xs {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
     }
 
     &__priorities {
@@ -32,15 +51,71 @@
             @include flex-center;
             justify-content: center;
         }
+
+        @include media-lg {
+            &-list {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 40px;
+            }
+
+            &-text {
+                max-width: 300px;
+            }
+        }
+
+        @include media-md {
+            &-title.title-3 {
+                font-size: 1.2rem;
+            }
+
+            &-text {
+                font-size: 0.9rem;
+            }
+
+            &-icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        @include media-sm {
+            &-title.title-3 {
+                font-size: 1.1rem;
+            }
+
+            &-text {
+                font-size: 0.8rem;
+            }
+
+            &-icon {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @include media-xs {
+            &-list {
+                grid-template-columns: 1fr;
+            }
+
+            &-title.title-3 {
+                font-size: 1.2rem;
+            }
+
+            &-text {
+                font-size: 0.9rem;
+            }
+        }
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
         justify-content: space-between;
-        grid-gap: 40px;
+        gap: 40px;
 
         &-text {
+            flex-shrink: 1;
+
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -50,10 +125,15 @@
             border-radius: 10px;
 
             max-width: 500px;
+
+            @include media-sm {
+                font-size: 0.9rem;
+            }
         }
 
         &-img {
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             height: 400px;
             background-color: #fff;
             border-radius: 10px;
@@ -62,6 +142,10 @@
         &-title.title-3 {
             text-align: left;
             color: $blue-btn-accent;
+
+            @include media-sm {
+                font-size: 1.1rem;
+            }
         }
 
         &-desc {
@@ -70,6 +154,8 @@
 
         &-skills {
             padding: 20px;
+            width: 500px;
+            flex-shrink: 0;
 
             h3 {
                 margin-bottom: 30px;
@@ -85,7 +171,6 @@
                 display: flex;
                 background-color: $light-grey;
                 max-width: 500px;
-                width: 500px;
 
                 .skills-text {
                     display: flex;
@@ -97,6 +182,20 @@
                     background-color: $blue-light;
                     width: 20%;
                     justify-content: center;
+
+                    @include media-sm {
+                        font-size: 0.9rem;
+                        width: 25%;
+                    }
+
+                    @media (max-width: 420px) {
+                        font-size: 0.7rem;
+                        width: 30%;
+                    }
+
+                    @include media-xs {
+                        font-size: 0.6rem;
+                    }
                 }
 
                 .skills-bar {
@@ -118,8 +217,82 @@
                     &--40 {
                         width: 40%;
                     }
+
+                    @include media-sm {
+                        width: 70%;
+
+                        &--60 {
+                            width: 55%;
+                        }
+
+                        &--55 {
+                            width: 50%;
+                        }
+
+                        &--45 {
+                            width: 40%;
+                        }
+
+                        &--40 {
+                            width: 35%;
+                        }
+                    }
+
+                    @media (max-width: 420px) {
+                        width: 65%;
+
+                        &--60 {
+                            width: 50%;
+                        }
+
+                        &--55 {
+                            width: 45%;
+                        }
+
+                        &--45 {
+                            width: 35%;
+                        }
+
+                        &--40 {
+                            width: 30%;
+                        }
+                    }
                 }
             }
+
+            @include media-sm {
+                width: 400px;
+            }
+
+            @media (max-width: 420px) {
+                width: 320px;
+            }
+
+            @include media-xs {
+                width: 240px;
+            }
         }
+
+        @include media-lg {
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+    }
+
+    @include media-lg {
+        padding: $section-padding-lg 0;
+    }
+
+    @include media-md {
+        padding: $section-padding-md 0;
+    }
+
+    @include media-sm {
+        padding: $section-padding-sm 0;
+    }
+
+    @include media-xs {
+        padding: $section-padding-xs 0;
     }
 }

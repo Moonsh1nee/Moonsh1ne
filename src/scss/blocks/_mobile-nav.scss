@@ -13,7 +13,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	background: #8ccae6;
+	background: $bg-light-grey;
 	transition: all 0.2s ease-in;
 }
 
@@ -21,18 +21,12 @@
 	top: 0;
 }
 
-.mobile-nav a {
-	color: #fff;
-}
-
 .mobile-nav__list {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	row-gap: 20px;
-	font-size: 28px;
+	gap: 20px;
+}
 
-	& .active {
-		opacity: 0.5;
-	}
+.mobile-nav__item {
+	font-size: 24px;
 }

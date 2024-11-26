@@ -10,4 +10,24 @@
 		@include flex-center-between;
 		gap: 15px;
 	}
+
+	&__btn-wrapper {
+		@include flex-center;
+		gap: 20px;
+	}
+
+	.mobile-nav-btn {
+		display: none;
+	}
+
+	@include media-lg {
+		padding: 10px 0;
+	}
+
+	@include media-md {
+
+		.mobile-nav-btn {
+			display: block;
+		}
+	}
 }
