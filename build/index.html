@@ -256,16 +256,12 @@
 					<h2 class="title-2 works__title">My&#160;works</h2>
 					<div class="works__wrapper">
 						<article class="works__card">
-							<picture>
-								<source srcset="./img/works/eatly.webp 1x, ./img/works/eatly@2x.webp 2x" type="image/webp" />
-								<source srcset="./img/works/eatly.jpg 1x, ./img/works/eatly@2x.jpg 2x" type="image/jpeg" />
-								<img src="./img/works/eatly.jpg" alt="eatly website" class="works__card-img" />
-							</picture>
+							<img src="./img/works/eatly.jpg" alt="eatly website" class="works__card-img" />
 							<div class="works__card-content">
 								<h3 class="title-3 works__card-title">Eatly</h3>
 								<p class="works__card-desc">
-									We&#160;present our restaurants and unique dishes made with love. Discover a&#160;variety of cuisines and enjoy exquisite gastronomic experiences.
-									Each restaurant offers signature recipes and a&#160;unique atmosphere.
+									We&#160;present our restaurants and unique dishes made with love. Discover a&#160;variety of&#160;cuisines and enjoy exquisite gastronomic
+									experiences. Each restaurant offers signature recipes and a&#160;unique atmosphere.
 								</p>
 								<h4 class="title-4 works__card-tech">Technologies used:</h4>
 								<ul class="works__card-list">
@@ -282,15 +278,11 @@
 						</article>
 
 						<article class="works__card">
-							<picture>
-								<source srcset="./img/works/modimal.webp 1x, ./img/works/modimal@2x.webp 2x" type="image/webp" />
-								<source srcset="./img/works/modimal.jpg 1x, ./img/works/modimal@2x.jpg 2x" type="image/jpeg" />
-								<img src="./img/works/modimal.jpg" alt="modimal website" class="works__card-img" />
-							</picture>
+							<img src="./img/works/modimal.jpg" alt="modimal website" class="works__card-img" />
 							<div class="works__card-content">
 								<h3 class="title-3 works__card-title">Modimal</h3>
 								<p class="works__card-desc">
-									Welcome to&#160;our site! Here, you&#8217;ll find stylish and modern clothing for any occasion. We offer a&#160;wide variety of&#160;options
+									Welcome to&#160;our site! Here, you&#8217;ll find stylish and modern clothing for any occasion. We&#160;offer a&#160;wide variety of&#160;options
 									to&#160;satisfy all your preferences. Discover new collections, exclusive offers, and inspiration to&#160;create your unique style.
 								</p>
 								<h4 class="title-4 works__card-tech">Technologies used:</h4>
@@ -308,17 +300,13 @@
 						</article>
 
 						<article class="works__card">
-							<picture>
-								<source srcset="./img/works/robin.webp 1x, ./img/works/robin@2x.webp 2x" type="image/webp" />
-								<source srcset="./img/works/robin.jpg 1x, ./img/works/robin@2x.jpg 2x" type="image/jpeg" />
-								<img src="./img/works/robin.jpg" alt="robin designer website" class="works__card-img" />
-							</picture>
+							<img src="./img/works/robin.jpg" alt="robin designer website" class="works__card-img" />
 							<div class="works__card-content">
 								<h3 class="title-3 works__card-title">Robin</h3>
 								<p class="works__card-desc">
 									Welcome to&#160;our website! Here, you&#8217;ll find innovative solutions for app and web design, tailored to&#160;meet your unique needs. Explore
 									our portfolio of&#160;creative and user-friendly designs, each crafted with precision and attention to&#160;detail. Whether you&#8217;re looking
-									to enhance your online presence or&#160;develop a&#160;new app, our team of&#160;experts is&#160;here to&#160;turn your vision into reality.
+									to&#160;enhance your online presence or&#160;develop a&#160;new app, our team of&#160;experts is here to&#160;turn your vision into reality.
 								</p>
 								<h4 class="title-4 works__card-tech">Technologies used:</h4>
 								<ul class="works__card-list">
@@ -336,7 +324,70 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="contact" id="contact">
+				<div class="container">
+					<h2 class="title-2 contact__title">Contact</h2>
+					<div class="contact__wrapper">
+						<div class="contact__wrapper-form">
+							<p class="contact-form__question">Have a&#160;question or&#160;want to&#160;work together?</p>
+							<form id="contactForm">
+								<label for="name">Name:</label>
+								<input type="text" id="name" name="name" required placeholder="Name" />
+
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" required placeholder="Email" />
+
+								<label for="message">Message:</label>
+								<textarea id="message" name="message" required placeholder="Your message"></textarea>
+
+								<button type="submit">Send</button>
+							</form>
+							<div id="result"></div>
+						</div>
+
+						<div class="contact-social">
+							<h3 class="title-3 contact-social__title">Social</h3>
+							<ul class="contact-social__list">
+								<li class="contact-social__item">
+									<a href="https://t.me/Moonsh1ne_OP" class="contact-social__link" target="_blank">
+										<svg class="icon icon--tg">
+											<use href="./img/svgsprite/sprite.symbol.svg#tg"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="contact-social__item">
+									<a href="https://vk.com/moonsh1ne_vk" class="contact-social__link" target="_blank">
+										<svg class="icon icon--vk">
+											<use href="./img/svgsprite/sprite.symbol.svg#vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="contact-social__item">
+									<a href="https://api.whatsapp.com/send/?phone=79026529773" class="contact-social__link" target="_blank">
+										<svg class="icon icon--whatsapp">
+											<use href="./img/svgsprite/sprite.symbol.svg#whatsapp"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="contact-social__item">
+									<a href="https://www.instagram.com/moonsh1ne_e" class="contact-social__link" target="_blank">
+										<svg class="icon icon--instagram">
+											<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<div class="container">
+				<p>&#169; 2024 Your Company Name. All rights reserved.</p>
+			</div>
+		</footer>
 
 		<script src="./js/index.bundle.js"></script>
 	</body>

@@ -1,10 +1,6 @@
 .works {
     padding: $section-padding 0;
 
-    &__title {
-        margin-bottom: 60px;
-    }
-
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -39,7 +35,7 @@
 
         &-img {
             display: block;
-            width: 100%;
+            width: 60%;
             object-fit: contain;
             object-position: center;
             border: 1px solid $dark-grey;
@@ -62,11 +58,23 @@
             text-align: left;
             font-size: 28px;
             color: $green;
+
+            @include media-md {
+                font-size: 24px;
+            }
+
+            @include media-sm {
+                font-size: 20px;
+            }
         }
 
         &-desc {
             font-size: 15px;
             text-align: justify;
+
+            @include media-md {
+                font-size: 14px;
+            }
         }
 
         &-list {
@@ -105,6 +113,11 @@
                     color: $orange;
                 }
             }
+
+            @include media-md {
+                font-size: 15px;
+
+            }
         }
         &::before {
             content: "";
@@ -128,5 +141,52 @@
             width: 100%;
             opacity: 0.7;
         }
+
+        @include media-lg {
+            flex-direction: column;
+            gap: 20px;
+            max-width: 100%;
+
+            &:nth-child(even) {
+                flex-direction: column;
+                align-self: self-start;
+            }
+
+            picture {
+                flex-basis: 100%;
+            }
+
+            &-img {
+                width: 100%;
+            }
+
+            &-content {
+                flex-basis: 100%;
+
+                padding-bottom: 80px;
+            }
+        }
+
+        @include media-md {
+            &-content {
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    @include media-lg {
+        padding: $section-padding-lg 0;
+    }
+
+    @include media-md {
+        padding: $section-padding-md 0;
+    }
+
+    @include media-sm {
+        padding: $section-padding-sm 0;
+    }
+
+    @include media-xs {
+        padding: $section-padding-xs 0;
     }
 }
