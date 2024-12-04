@@ -3,11 +3,11 @@ html {
 }
 
 body {
-	background-color: $bg-light-grey;
-	color: $font-color;
+	background-color: $color-bg;
+	color: $color-font-main;
 	font-family: $font-main;
-	text-wrap: balance;
 	font-size: 16px;
+	font-weight: 400;
 }
 
 img {
@@ -15,5 +15,5 @@ img {
 }
 
 a {
-	color: $dark-grey;
+	color: $color-font-main;
 }

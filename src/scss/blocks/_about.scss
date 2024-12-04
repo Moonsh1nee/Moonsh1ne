@@ -22,7 +22,7 @@
         &-icon {
             width: 80px;
             height: 80px;
-            background-color: $blue-light;
+            background-color: $color-accent-light__blue;
             border-radius: 20%;
 
             @include flex-center;
@@ -86,7 +86,7 @@
             flex-direction: column;
             gap: 15px;
             padding: 25px;
-            background-color: $block-grey;
+            background-color: $color-block-accent;
             border-radius: 10px;
 
             max-width: 500px;
@@ -106,7 +106,7 @@
 
         &-title.title-3 {
             text-align: left;
-            color: $blue-btn-accent;
+            color: $color-accent-blue;
 
             @include media-sm {
                 font-size: 1.1rem;
@@ -134,17 +134,17 @@
 
             &-item {
                 display: flex;
-                background-color: $light-grey;
+                background-color: $color-bar-grey;
                 max-width: 500px;
 
                 .skills-text {
                     display: flex;
                     padding: 2px 10px;
-                    color: $white;
+                    color: $color-bg;
                     font-size: 1rem;
                     font-family: $font-second;
                     font-weight: 500;
-                    background-color: $blue-light;
+                    background-color: $color-accent-light__blue;
                     width: 20%;
                     justify-content: center;
 
@@ -164,7 +164,7 @@
                 }
 
                 .skills-bar {
-                    background-color: $blue-bar;
+                    background-color: $color-bar-blue;
                     width: 75%;
 
                     &--60 {

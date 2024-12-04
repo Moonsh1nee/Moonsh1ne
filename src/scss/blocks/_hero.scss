@@ -1,11 +1,9 @@
 .hero {
-    background-color: $light-grey;
-    min-height: 100vh;
+    background-color: $color-block-accent;
     @include flex-center;
-    padding: 100px 0;
+    padding: 120px 0;
 
-    position: relative;
-    clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
+    min-height: 600px;
 
     &__wrapper {
         @include flex-center-between;
@@ -15,13 +13,11 @@
             font-size: 24px;
             font-weight: 500;
 
-            padding: 40px;
+            padding: 60px 20px;
             display: flex;
             flex-direction: column;
             gap: 20px;
-
-            background-color: $block-grey;
-            border-radius: 14px;
+            flex-shrink: 0;
 
             @include media-lg {
                 padding: 20px;
@@ -29,11 +25,11 @@
             }
 
             @include media-md {
-                padding: 30px;
+                padding: 40px;
             }
 
             @include media-sm {
-                padding: 20px;
+                padding: 0;
             }
         }
 
@@ -48,48 +44,36 @@
 
         @include media-md {
             flex-direction: column;
-            gap: 20px;
+            gap: 50px;
         }
 
         @include media-sm {
             gap: 30px;
         }
-
-        @media (max-width: 420px) {
-            gap: 50px;
-        }
     }
 
     &__text {
-        font-size: 40px;
+        font-size: 35px;
 
         span {
-            font-size: 50px;
+            font-size: 45px;
             font-weight: 700;
-            color: $blue-btn-accent;
+            color: $color-accent-blue;
         }
 
         @include media-lg {
             font-size: 30px;
 
             span {
-                font-size: 40px;
+                font-size: 35px;
             }
         }
 
         @include media-sm {
-            font-size: 24px;
+            font-size: 22px;
 
             span {
-                font-size: 30px;
-            }
-        }
-
-        @media (max-width: 420px) {
-            font-size: 20px;
-
-            span {
-                font-size: 24px;
+                font-size: 26px;
             }
         }
     }
@@ -97,7 +81,7 @@
     &__title {
         span {
             font-weight: 600;
-            color: $orange;
+            color: $color-accent-orange;
         }
 
         @include media-lg {
@@ -109,29 +93,11 @@
         }
     }
 
-    &__btn-about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        position: absolute;
-        height: 80px;
-        width: 50px;
-        bottom: 0;
-        left: calc(50% - 25px);
-    }
-
     @include media-lg {
         padding: 82px 0;
     }
 
     @include media-sm {
         padding: 75px 0;
-    }
-
-    @media (max-width: 420px) {
-        padding: 70px 0;
-
-        align-items: stretch;
     }
 }

@@ -21,7 +21,7 @@
 #contact textarea {
     width: 80%;
     padding: 10px;
-    border: 1px solid $dark-grey;
+    border: 1px solid $color-border-grey;
     border-radius: 5px;
 
     @include media-sm {
@@ -31,24 +31,25 @@
 
 #contact button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: $color-accent-blue;
+    font-family: $font-fourth;
+    font-weight: 700;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-    transition: background-color 0.3s ease;
-}
-
-#contact button:hover {
-    background-color: #0056b3;
+    &:hover {
+        background-color: darken($color-accent-blue, 10%);
+    }
 }
 
 #result {
     text-align: center;
     margin-top: 20px;
     font-size: 1.2em;
-    color: $orange;
+    color: $color-accent-orange;
 
     @include media-sm {
         font-size: 1em;

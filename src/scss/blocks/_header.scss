@@ -1,5 +1,5 @@
 .header {
-	background-color: $light-grey;
+	background-color: $color-block-accent;
 	padding: 15px 0;
 	position: fixed;
 	top: 0;
@@ -18,16 +18,13 @@
 
 	.mobile-nav-btn {
 		display: none;
+
+		@include media-md {
+			display: block;
+		}
 	}
 
 	@include media-lg {
 		padding: 10px 0;
-	}
-
-	@include media-md {
-
-		.mobile-nav-btn {
-			display: block;
-		}
 	}
 }

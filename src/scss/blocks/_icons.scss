@@ -1,53 +1,28 @@
 .icon {
     width: 60px;
     height: 60px;
-    fill: $white;
-}
-
-.icon--arrow-down {
-    position: relative;
-    margin-top: 3px;
-    height: 27px;
-    width: 2px;
-    background-color: $dark-grey;
-
-    transition: all 0.2s;
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: -4px;
-        width: 10px;
-        height: 10px;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 10px solid $dark-grey;
-        opacity: 0;
-
-        transition: opacity 0.3s 0.2s;
-    }
+    fill: $color-bg;
 }
 
 .icon--arrow-right {
-    width: 20px;
-    height: 20px;
-    fill: $white;
+    width: 24px;
+    height: 24px;
+    fill: $color-accent-blue;
 
     padding-top: 2px;
 
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
-    @include media-sm {
-        width: 18px;
-        height: 18px;
+    @include media-lg {
+        width: 20px;
+        height: 20px;
         padding-top: 1px;
     }
 
-    @media (max-width: 420px) {
+    @include media-sm {
         width: 16px;
         height: 16px;
-        padding-top: 1px;
+        padding-bottom: 1px;
     }
 }
 
@@ -57,7 +32,7 @@
 .icon--intuitive {
     width: 60px;
     height: 60px;
-    fill: $white;
+    fill: $color-bg;
 
     @include media-md {
         width: 50px;

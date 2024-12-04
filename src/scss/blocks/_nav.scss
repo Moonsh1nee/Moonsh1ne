@@ -3,8 +3,6 @@
         @include flex-center;
         gap: 40px;
         font-family: $font-second;
-        font-weight: 400;
-        font-size: 16px;
         text-transform: uppercase;
 
         @include media-lg {
@@ -23,7 +21,7 @@
             right: 0;
             width: 0;
             height: 1px;
-            background-color: $font-color;
+            background-color: $color-border-grey;
             transition: width 0.3s;
         }
 
@@ -35,7 +33,7 @@
             transition: color 0.3s ease-in-out;
 
             &:hover {
-                color: $font-color;
+                color: $color-border-grey;
             }
         }
     }
